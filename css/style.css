@@ -91,6 +91,69 @@ a:hover {
   font-weight: 700;
   margin-bottom: 10px;
 }
+.table {
+  display: flex;
+  flex-wrap: wrap;
+}
+.table__cell {
+  flex: 1 1 230px;
+  height: 200px;
+  margin-top: 20px;
+  margin-right: 5px;
+  position: relative;
+}
+.project__overlay {
+  background-color: rgba(0, 0, 100, .8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 0;
+  z-index: 1;
+}
+.project__overlay:hover {
+  opacity: 1;
+}
+.table__cell_bootstrap {
+  background-image: url(../img/project-1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.table__cell_maths {
+  background-image: url(../img/math.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.table__cell_english {
+  background-image: url(../img/english.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.table__cell_yandex-study {
+  background-image: url(../img/how-to-study.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.position_absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.project__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .projects-link {
   text-decoration: none;
   color: #81aed5;
