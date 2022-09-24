@@ -1,0 +1,60 @@
+body{
+    font-size: 20px;
+    font-family: Calibri, serif;
+    padding-left: 20px;
+    background: #D1E7EA url("../images/UIHere.png") no-repeat 800px 230px;
+
+    width:1000px;
+    margin: 20px auto;
+}
+h1{
+    margin: 20px 150px;
+    color: #0b58a2;
+}
+/*
+.thumb-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%)
+    height: 0;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.thumb-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    border-width: 0;
+    outline-width: 0;
+} */
+
+.pic{
+
+}
+h4{
+    color: #1b3f5f;
+    margin: 20px auto;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    width: 140px;
+    height: 30px;
+}
+.empty{
+    width: 50px;
+}
+.even{
+    background-color: #BCE7E7;
+}
+#do{
+    border: 1px solid #BCE7E7;
+    cursor: pointer;
+    background-color: #BCE7E7
+}
+option{
+    cursor: pointer;
+    background-color: #BCE7E7;
+}

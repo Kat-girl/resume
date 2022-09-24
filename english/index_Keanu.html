@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Keanu Reeves</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/globe.png" type="image/x-icon" />
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(document).on("submit", "form", function () {
+          var sum = 0;
+          if ($("input[name='friend']:checked").val() == "no") {
+            $("#friend").removeClass("incorrect-Keanu");
+            $("#friend").addClass("correct-Keanu");
+            sum++;
+          } else $("#friend").addClass("incorrect-Keanu");
+          if ($("input[name='ghost']:checked").val() == "no") {
+            $("#ghost").removeClass("incorrect-Keanu");
+            $("#ghost").addClass("correct-Keanu");
+            sum++;
+          } else $("#ghost").addClass("incorrect-Keanu");
+          if ($("input[name='movie']:checked").val() == "yes") {
+            $("#movie").removeClass("incorrect-Keanu");
+            $("#movie").addClass("correct-Keanu");
+            sum++;
+          } else $("#movie").addClass("incorrect-Keanu");
+          if ($("input[name='lastName']:checked").val() == "no") {
+            $("#lastName").removeClass("incorrect-Keanu");
+            $("#lastName").addClass("correct-Keanu");
+            sum++;
+          } else $("#lastName").addClass("incorrect-Keanu");
+          var encourage;
+          if (sum <= 2) {
+            $("#result").css("color", "red");
+            encourage = "C'mon, you can do better than that!";
+          } else {
+            $("#result").css("color", "#3AD83A");
+            encourage = "Great! Keep it up!";
+          }
+          $("#result").html("Your score is " + sum + "/4" + " " + encourage);
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="header">
+        <div class="logo">
+          <a class="navbar-brand" href="#"
+            ><img src="img/globe.png" alt="globe"
+          /></a>
+        </div>
+        <div class="brand">
+          <a href="index.html">English Practice</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+          <form class="form-inline ml-auto">
+            <input
+              type="text"
+              placeholder="Search what you need"
+              class="form-control mr-sm-2 my-1"
+            />
+            <button type="submit" class="btn btn-success my-1 my-sm-0">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <main>
+        <h1>Jimmy Kimmel Asks Keanu Reeves Random Questions</h1>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="embed-responsive embed-responsive-16by9 video">
+                <iframe
+                  class="embed-responsive-item"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/ETf4UhOWAG0"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="vocab col-lg-6 col-md-12">
+              <h4>Vocabulary</h4>
+              <table>
+                <tr class="odd">
+                  <td>random</td>
+                  <td>выбранный наугад</td>
+                  <td class="empty"></td>
+                  <td>all of a sudden</td>
+                  <td>внезапно</td>
+                </tr>
+                <tr class="even">
+                  <td>stick with</td>
+                  <td>придерживаться</td>
+                  <td class="empty"></td>
+                  <td>wave</td>
+                  <td>размахивать</td>
+                </tr>
+                <tr class="odd">
+                  <td>nickname</td>
+                  <td>прозвище</td>
+                  <td class="empty"></td>
+                  <td>disappear</td>
+                  <td>исчезать</td>
+                </tr>
+                <tr class="even">
+                  <td>share</td>
+                  <td>поделиться</td>
+                  <td class="empty"></td>
+                  <td>weird</td>
+                  <td>странный</td>
+                </tr>
+                <tr class="odd">
+                  <td>middle name</td>
+                  <td>второе имя</td>
+                  <td class="empty"></td>
+                  <td>move</td>
+                  <td>переезжать</td>
+                </tr>
+                <tr class="even">
+                  <td>ghost</td>
+                  <td>привидение</td>
+                  <td class="empty"></td>
+                  <td>tonsil</td>
+                  <td>миндалина</td>
+                </tr>
+                <tr class="odd">
+                  <td>nanny</td>
+                  <td>няня</td>
+                  <td class="empty"></td>
+                  <td>opportunity</td>
+                  <td>возможность</td>
+                </tr>
+                <tr class="even">
+                  <td>asleep</td>
+                  <td>спящий</td>
+                  <td class="empty"></td>
+                  <td>choose</td>
+                  <td>выбирать</td>
+                </tr>
+                <tr class="odd">
+                  <td>doorway</td>
+                  <td>дверной проем</td>
+                  <td class="empty"></td>
+                  <td>trilogy</td>
+                  <td>трилогия</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="test">
+          <h4>Test</h4>
+          <form class="submit-rating">
+            <div class="container-fluid">
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question"><p>Keanu has a friend Keanu</p></div>
+                </div>
+                <div class="col-6">
+                  <div class="smile-rating-container">
+                    <div class="smile-rating-toggle-container">
+                      <input
+                        id="meh"
+                        class="meh"
+                        name="friend"
+                        type="radio"
+                        value="no"
+                      />
+                      <input
+                        id="fun"
+                        class="fun"
+                        name="friend"
+                        type="radio"
+                        value="yes"
+                      />
+                      <label for="meh" class="rating-label rating-label-meh"
+                        >No</label
+                      >
+                      <div class="smile-rating-toggle"></div>
+                      <div class="toggle-rating-pill" id="friend"></div>
+                      <label for="fun" class="rating-label rating-label-fun"
+                        >Yes</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question">
+                    <p>Keanu saw a ghost in Australia</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="smile-rating-container">
+                    <div class="smile-rating-toggle-container">
+                      <input
+                        id="nope"
+                        class="meh"
+                        name="ghost"
+                        type="radio"
+                        value="no"
+                      />
+                      <input
+                        id="yeap"
+                        class="fun"
+                        name="ghost"
+                        type="radio"
+                        value="yes"
+                      />
+                      <label for="nope" class="rating-label rating-label-meh"
+                        >No</label
+                      >
+                      <div class="smile-rating-toggle"></div>
+                      <div class="toggle-rating-pill" id="ghost"></div>
+                      <label for="yeap" class="rating-label rating-label-fun"
+                        >Yes</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question">
+                    <p>Matrix was the funniest movie to make</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="smile-rating-container">
+                    <div class="smile-rating-toggle-container">
+                      <input
+                        id="fal"
+                        class="meh"
+                        name="movie"
+                        type="radio"
+                        value="no"
+                      />
+                      <input
+                        id="tru"
+                        class="fun"
+                        name="movie"
+                        type="radio"
+                        value="yes"
+                      />
+                      <label for="fal" class="rating-label rating-label-meh"
+                        >No</label
+                      >
+                      <div class="smile-rating-toggle"></div>
+                      <div class="toggle-rating-pill" id="movie"></div>
+                      <label for="tru" class="rating-label rating-label-fun"
+                        >Yes</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question">
+                    <p>Keanu's last name is Charles</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="smile-rating-container">
+                    <div class="smile-rating-toggle-container">
+                      <input
+                        id="wrong"
+                        class="meh"
+                        name="lastName"
+                        type="radio"
+                        value="no"
+                      />
+                      <input
+                        id="right"
+                        class="fun"
+                        name="lastName"
+                        type="radio"
+                        value="yes"
+                      />
+                      <label for="wrong" class="rating-label rating-label-meh"
+                        >No</label
+                      >
+                      <div class="smile-rating-toggle"></div>
+                      <div class="toggle-rating-pill" id="lastName"></div>
+                      <label for="right" class="rating-label rating-label-fun"
+                        >Yes</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="button buttons">Check</button>
+          </form>
+          <div id="result"><span id="encourage"></span></div>
+        </div>
+        <div class="transcript">
+          <h4>Transcript</h4>
+          <p>
+            - I want to ask you some very random questions if you don't mind
+            because I, you know, I think you're an interesting guy, I'm
+            interested in you. Have you ever met another Keanu?
+          </p>
+          <p>- Yes, I have a cousin...</p>
+          <p>
+            - And nobody said that we got a Keanu already, maybe we should just
+            stick with the one?
+          </p>
+          <p>
+            - Yeah but I didn't meet that guy until I was probably eight or nine
+            oh I had never heard that name for another human until that moment.
+            And I was just like wow, ok, Keanu. I've never met a Keanu before.
+          </p>
+          <p>- Do you have a nickname or have you ever had a nickname?</p>
+          <p>- I have yeah.</p>
+          <p>- Can you share that?</p>
+          <p>
+            - You know, people call me different things sometimes. You know,
+            well, that's really, that's fun, my middle name is Charles, so I
+            have this one friend once calls me Charlie.
+          </p>
+          <p>- Charlie?</p>
+          <p>- Yeah, okay, all right.</p>
+          <p>Have you ever seen a ghost?</p>
+          <p>- Yes.</p>
+          <p>- You have?!</p>
+          <p>- Yeah, when I was a kid.</p>
+          <p>- In Hawaii?</p>
+          <p>- No, it was in New York. It was cool.</p>
+          <p>- What happened?</p>
+          <p>
+            - Okay, okay, so, I'm like a little kid, I'm probably like six or
+            seven years old, and our new apartment, and we just come from
+            probably Australia. Anyway so Ranade, nanny, in the bedroom, she's
+            sitting my sisters asleep, she's sitting over there, there's a
+            doorway. All of a sudden we're looking over there, and this like
+            jacket comes waving through the doorway, and empty, there's no head,
+            there's no body, there's no legs, it's just there! And then it
+            disappears, and I was a little kid and I thought: okay well, that's
+            interesting. And then I looked over at the nanny and she's like
+            this, and I'm like oh wow so that was real!
+          </p>
+          <p>- Wow, cool!</p>
+          <p>- Is that a ghost or is that just some weird floating jacket?</p>
+          <p>- That's a reason to move to me</p>
+          <p>Do you still have your tonsils?</p>
+          <p>- Yes</p>
+          <p>- Okay, both of them?</p>
+          <p>- Sure.</p>
+          <p>
+            - What movie of all the movies you made was the least fun to make?
+          </p>
+          <p>- Come on Jimmy, I can't tell.</p>
+          <p>- What was the most fun to make?</p>
+          <p class="lastPar">
+            - Ah, you know, I've had the opportunity to work on a few projects
+            that have changed my life, as an artist and as a person, and today
+            I'm going to choose the Matrix trilogy!
+          </p>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <p>Menu</p>
+            <ul>
+              <li><a href="#">Grammar</a></li>
+              <li><a href="#">Listening</a></li>
+              <li><a href="#">Reading</a></li>
+              <li><a href="#">Speaking</a></li>
+              <li><a href="#">Writing</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p>Levels</p>
+            <ul>
+              <li><a href="#">A1 Elementary</a></li>
+              <li><a href="#">A2 Pre-intermediate</a></li>
+              <li><a href="#">B1 Intermediate</a></li>
+              <li><a href="#">B2 Upper Intermediate</a></li>
+              <li><a href="#">C1 Advanced</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p>Links</p>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" id="very-bottom">
+          <div class="col-5">
+            &copy; 2020
+          </div>
+          <div class="col-7 mx-auto">
+            <a href="#"><img src="img/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="img/twitter.png" alt="twitter" /></a>
+            <a href="#"><img src="img/instagram.png" alt="instagram" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

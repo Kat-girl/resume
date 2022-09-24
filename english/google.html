@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>If Google Was a Guy: Quarantine Edition</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/globe.png" type="image/x-icon" />
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(document).on('submit', 'form', function () {
+          var sum = 0;
+          if ($("input[name='question-1']:checked").val() == '1-2') {
+            $("label[for='opt-1-1']").removeClass('incorrect-radio');
+            $("label[for='opt-1-3']").removeClass('incorrect-radio');
+            $("label[for='opt-1-2']").addClass('correct-radio');
+            sum++;
+          } else if ($("input[name='question-1']:checked").val() == '1-1') {
+            $("label[for='opt-1-2']").removeClass('correct-radio');
+            $("label[for='opt-1-3']").removeClass('incorrect-radio');
+            $("label[for='opt-1-1']").addClass('incorrect-radio');
+          } else {
+            $("label[for='opt-1-1']").removeClass('incorrect-radio');
+            $("label[for='opt-1-2']").removeClass('correct-radio');
+            $("label[for='opt-1-3']").addClass('incorrect-radio');
+          }
+          if ($("input[name='question-2']:checked").val() == '2-1') {
+            $("label[for='opt-2-2']").removeClass('incorrect-radio');
+            $("label[for='opt-2-3']").removeClass('incorrect-radio');
+            $("label[for='opt-2-1']").addClass('correct-radio');
+            sum++;
+          } else if ($("input[name='question-2']:checked").val() == '2-2') {
+            $("label[for='opt-2-1']").removeClass('correct-radio');
+            $("label[for='opt-2-3']").removeClass('incorrect-radio');
+            $("label[for='opt-2-2']").addClass('incorrect-radio');
+          } else {
+            $("label[for='opt-2-1']").removeClass('correct-radio');
+            $("label[for='opt-2-2']").removeClass('incorrect-radio');
+            $("label[for='opt-2-3']").addClass('incorrect-radio');
+          }
+          if ($("input[name='question-3']:checked").val() == '3-1') {
+            $("label[for='opt-3-2']").removeClass('incorrect-radio');
+            $("label[for='opt-3-3']").removeClass('incorrect-radio');
+            $("label[for='opt-3-1']").addClass('correct-radio');
+            sum++;
+          } else if ($("input[name='question-3']:checked").val() == '3-2') {
+            $("label[for='opt-3-1']").removeClass('correct-radio');
+            $("label[for='opt-3-3']").removeClass('incorrect-radio');
+            $("label[for='opt-3-2']").addClass('incorrect-radio');
+          } else {
+            $("label[for='opt-3-1']").removeClass('correct-radio');
+            $("label[for='opt-3-2']").removeClass('incorrect-radio');
+            $("label[for='opt-3-3']").addClass('incorrect-radio');
+          }
+          if ($("input[name='question-4']:checked").val() == '4-3') {
+            $("label[for='opt-4-1']").removeClass('incorrect-radio');
+            $("label[for='opt-4-2']").removeClass('incorrect-radio');
+            $("label[for='opt-4-3']").addClass('correct-radio');
+            sum++;
+          } else if ($("input[name='question-4']:checked").val() == '4-1') {
+            $("label[for='opt-4-3']").removeClass('correct-radio');
+            $("label[for='opt-4-2']").removeClass('incorrect-radio');
+            $("label[for='opt-4-1']").addClass('incorrect-radio');
+          } else {
+            $("label[for='opt-4-3']").removeClass('correct-radio');
+            $("label[for='opt-4-1']").removeClass('incorrect-radio');
+            $("label[for='opt-4-2']").addClass('incorrect-radio');
+          }
+          if ($("input[name='question-5']:checked").val() == '5-2') {
+            $("label[for='opt-5-1']").removeClass('incorrect-radio');
+            $("label[for='opt-5-3']").removeClass('incorrect-radio');
+            $("label[for='opt-5-2']").addClass('correct-radio');
+            sum++;
+          } else if ($("input[name='question-5']:checked").val() == '5-1') {
+            $("label[for='opt-5-2']").removeClass('correct-radio');
+            $("label[for='opt-5-3']").removeClass('incorrect-radio');
+            $("label[for='opt-5-1']").addClass('incorrect-radio');
+          } else {
+            $("label[for='opt-5-2']").removeClass('correct-radio');
+            $("label[for='opt-5-1']").removeClass('incorrect-radio');
+            $("label[for='opt-5-3']").addClass('incorrect-radio');
+          }
+          if ($("input[name='question-6']:checked").val() == '6-1') {
+            $("label[for='opt-6-2']").removeClass('incorrect-radio');
+            $("label[for='opt-6-3']").removeClass('incorrect-radio');
+            $("label[for='opt-6-1']").addClass('correct-radio');
+            sum++;
+          } else if ($("input[name='question-6']:checked").val() == '6-2') {
+            $("label[for='opt-6-1']").removeClass('correct-radio');
+            $("label[for='opt-6-3']").removeClass('incorrect-radio');
+            $("label[for='opt-6-2']").addClass('incorrect-radio');
+          } else {
+            $("label[for='opt-6-1']").removeClass('correct-radio');
+            $("label[for='opt-6-2']").removeClass('incorrect-radio');
+            $("label[for='opt-6-3']").addClass('incorrect-radio');
+          }
+          var encourage;
+          if (sum <= 3) {
+            $('#result').css('color', 'red');
+            encourage = "C'mon, you can do better than that!";
+          } else if (sum == 4) {
+            $('#result').css('color', '#3AD83A');
+            encourage = 'Not bad!';
+          } else {
+            $('#result').css('color', '#3AD83A');
+            encourage = 'Great! Keep it up!';
+          }
+          $('#result').html('Your score is ' + sum + '/6' + ' ' + encourage);
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="header">
+        <div class="logo">
+          <a class="navbar-brand" href="#"
+            ><img src="img/globe.png" alt="globe"
+          /></a>
+        </div>
+        <div class="brand">
+          <a href="index.html">English Practice</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+          <form class="form-inline ml-auto">
+            <input
+              type="text"
+              placeholder="Search what you need"
+              class="form-control mr-sm-2 my-1"
+            />
+            <button type="submit" class="btn btn-success my-1 my-sm-0">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <main>
+        <h1>If Google Was a Guy: Quarantine Edition</h1>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="embed-responsive embed-responsive-16by9 video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/aliY82008tk?end=112"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="vocab col-lg-6 col-md-12">
+              <h4>Vocabulary</h4>
+              <table>
+                <tr class="odd">
+                  <td>six feet away</td>
+                  <td>держитесь в 6 футах от меня</td>
+                  <td class="empty"></td>
+                  <td>stay put</td>
+                  <td>оставаться на месте</td>
+                </tr>
+                <tr class="even">
+                  <td>pandemic</td>
+                  <td>пандемия</td>
+                  <td class="empty"></td>
+                  <td>anchor</td>
+                  <td>якорь</td>
+                </tr>
+                <tr class="odd">
+                  <td>rhino</td>
+                  <td>носорог</td>
+                  <td class="empty"></td>
+                  <td>club soda</td>
+                  <td>газировка</td>
+                </tr>
+                <tr class="even">
+                  <td>in bulk</td>
+                  <td>оптом</td>
+                  <td class="empty"></td>
+                  <td>staying in shape</td>
+                  <td>оставаться в форме</td>
+                </tr>
+                <tr class="odd">
+                  <td>sold out</td>
+                  <td>продано</td>
+                  <td class="empty"></td>
+                  <td>stress reliever</td>
+                  <td>снятие стресса</td>
+                </tr>
+                <tr class="even">
+                  <td>towel</td>
+                  <td>полотенце</td>
+                  <td class="empty"></td>
+                  <td>chiropractor</td>
+                  <td>костоправ</td>
+                </tr>
+                <tr class="odd">
+                  <td>tissue paper</td>
+                  <td>бумажные салфетки</td>
+                  <td class="empty"></td>
+                  <td>pace yourself</td>
+                  <td>держи себя в руках</td>
+                </tr>
+                <tr class="even">
+                  <td>rag</td>
+                  <td>тряпка, ветошь</td>
+                  <td class="empty"></td>
+                  <td>spread</td>
+                  <td>распространение</td>
+                </tr>
+                <tr class="odd">
+                  <td>undewear</td>
+                  <td>нижнее белье</td>
+                  <td class="empty"></td>
+                  <td>response</td>
+                  <td>ответ</td>
+                </tr>
+                <tr class="even">
+                  <td>gross</td>
+                  <td>отвратительный</td>
+                  <td class="empty"></td>
+                  <td>exclamation point</td>
+                  <td>восклицательный знак</td>
+                </tr>
+                <tr class="odd">
+                  <td>grocery store</td>
+                  <td>продуктовый магазин</td>
+                  <td class="empty"></td>
+                  <td>steal</td>
+                  <td>воровать</td>
+                </tr>
+                <tr class="even">
+                  <td>soap</td>
+                  <td>мыло</td>
+                  <td class="empty"></td>
+                  <td>weapon</td>
+                  <td>оружие</td>
+                </tr>
+                <tr class="odd">
+                  <td>volume sphere</td>
+                  <td>объем сферы</td>
+                  <td class="empty"></td>
+                  <td>homeschooling</td>
+                  <td>обучение на дому</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="test">
+          <h4>Test <small>Choose the correct option</small></h4>
+          <form class="submit-rating">
+            <div class="container-fluid">
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question">
+                    <p>I'm sure you have questions about the ..........</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-1"
+                      id="opt-1-1"
+                      value="1-1"
+                    />
+                    <label for="opt-1-1">virus</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-1"
+                      id="opt-1-2"
+                      value="1-2"
+                    />
+                    <label for="opt-1-2">pandemic</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-1"
+                      id="opt-1-3"
+                      value="1-3"
+                    />
+                    <label for="opt-1-3">panic</label>
+                  </p>
+                </div>
+              </div>
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question">
+                    <p>- Ah, paper towel in bulk. - ..........</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-2"
+                      id="opt-2-1"
+                      value="2-1"
+                    />
+                    <label for="opt-2-1">Sold out</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-2"
+                      id="opt-2-2"
+                      value="2-2"
+                    />
+                    <label for="opt-2-2">Found out</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-2"
+                      id="opt-2-3"
+                      value="2-3"
+                    />
+                    <label for="opt-2-3">Worn out</label>
+                  </p>
+                </div>
+              </div>
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question">
+                    <p>
+                      Video conferencing is a great .......... to stay
+                      connected.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-3"
+                      id="opt-3-1"
+                      value="3-1"
+                    />
+                    <label for="opt-3-1">way</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-3"
+                      id="opt-3-2"
+                      value="3-2"
+                    />
+                    <label for="opt-3-2">play</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-3"
+                      id="opt-3-3"
+                      value="3-3"
+                    />
+                    <label for="opt-3-3">okay</label>
+                  </p>
+                </div>
+              </div>
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question">
+                    <p>
+                      - Online yoga class. - Good for you staying in ..........
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-4"
+                      id="opt-4-1"
+                      value="4-1"
+                    />
+                    <label for="opt-4-1">shake</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-4"
+                      id="opt-4-2"
+                      value="4-2"
+                    />
+                    <label for="opt-4-2">game</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-4"
+                      id="opt-4-3"
+                      value="4-3"
+                    />
+                    <label for="opt-4-3">shape</label>
+                  </p>
+                </div>
+              </div>
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question">
+                    <p>
+                      The rate of .......... in foreign countries. The U.S.
+                      government response.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-5"
+                      id="opt-5-1"
+                      value="5-1"
+                    />
+                    <label for="opt-5-1">spray</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-5"
+                      id="opt-5-2"
+                      value="5-2"
+                    />
+                    <label for="opt-5-2">spread</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-5"
+                      id="opt-5-3"
+                      value="5-3"
+                    />
+                    <label for="opt-5-3">bread</label>
+                  </p>
+                </div>
+              </div>
+              <div class="row qu-ans">
+                <div class="col-6">
+                  <div class="question">
+                    <p>
+                      .......... is one of the best weapons we have against the
+                      virus.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-6"
+                      id="opt-6-1"
+                      value="6-1"
+                    />
+                    <label for="opt-6-1">soap</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-6"
+                      id="opt-6-2"
+                      value="6-2"
+                    />
+                    <label for="opt-6-2">soup</label>
+                  </p>
+                  <p>
+                    <input
+                      type="radio"
+                      name="question-6"
+                      id="opt-6-3"
+                      value="6-3"
+                    />
+                    <label for="opt-6-3">south</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="button buttons">Check</button>
+          </form>
+          <div id="result"><span id="encourage"></span></div>
+        </div>
+        <div class="transcript">
+          <h4>Transcript</h4>
+          <p>- Next.</p>
+          <p>- Google.</p>
+          <p>- Six feet away, please.</p>
+          <p>- And I'm glad to see you.</p>
+          <p>- I'm sure you have questions about the pandemic.</p>
+          <p>- Are rhinos elephants?</p>
+          <p>- Are what?</p>
+          <p>- Toilet paper in bulk.</p>
+          <p>- Sold out, sorry.</p>
+          <p>- Ah, paper towel in bulk.</p>
+          <p>- Sold out, too.</p>
+          <p>- Tissue paper in bulk.</p>
+          <p>- Sold out. You know, in older days we just used rags.</p>
+          <p>- Underwear in bulk.</p>
+          <p>- Very gross.</p>
+          <p>- How do I Zoom?</p>
+          <p>- Video conferencing is a great way to stay connected.</p>
+          <p>- Do I Zoom on Facebook?</p>
+          <p>- Where to begin.</p>
+          <p>- How do I Facebook?</p>
+          <p>- How islands stay put?</p>
+          <p>- Nothing about coronavirus. The quarantine.</p>
+          <p>- Islands have anchors?</p>
+          <p>- Mojito recipe.</p>
+          <p>- So you're going to need mint.</p>
+          <p>- Don't have it.</p>
+          <p>- Lime.</p>
+          <p>- Don't have it.</p>
+          <p>- Club soda.</p>
+          <p>- Don't have it.</p>
+          <p>- And rum.</p>
+          <p>- Woo, mojitos.</p>
+          <p>- Online yoga class.</p>
+          <p>- Good for you staying in shape.</p>
+          <p>- Online Zumba class.</p>
+          <p>- Regular exercise is a great stress reliever.</p>
+          <p>- Online crossfit class.</p>
+          <p>- Just be careful...</p>
+          <p>- Online chiropractor class.</p>
+          <p>
+            - Pace yourself. The rate of spread in foreign countries. The U.S.
+            government response.
+          </p>
+          <p>- Exclamation point but for quiet.</p>
+          <p>- Chicken.</p>
+          <p>
+            - A lot of grocery stores are sold out so you're gonna need to get
+            creative.
+          </p>
+          <p>- Farms near me.</p>
+          <p>
+            - Good thinking. Some farms will deliver vegetables right to your
+            door.
+          </p>
+          <p>- Stealing chickens.</p>
+          <p>- Uh, not that creative.</p>
+          <p>- How to wash hands</p>
+          <p>- Soap is one of the best weapons we have against the virus.</p>
+          <p>- Memes.</p>
+          <p>- Ugh, these are pretty funny, actually.</p>
+          <p>- Jewel's "Hands" about how to wash hands.</p>
+          <p>- Ah, she didn't.</p>
+          <p>- Calculate volume sphere.</p>
+          <p>- Why not ask a parent for some homeschooling?</p>
+          <p>- Uh, calculate volume sphere.</p>
+          <p>- ♪ These hands are washed like so ♪</p>
+          <p>♪ With water first ♪</p>
+          <p class="lastPar">♪ And then with soap ♪</p>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <p>Menu</p>
+            <ul>
+              <li><a href="#">Grammar</a></li>
+              <li><a href="#">Listening</a></li>
+              <li><a href="#">Reading</a></li>
+              <li><a href="#">Speaking</a></li>
+              <li><a href="#">Writing</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p>Levels</p>
+            <ul>
+              <li><a href="#">A1 Elementary</a></li>
+              <li><a href="#">A2 Pre-intermediate</a></li>
+              <li><a href="#">B1 Intermediate</a></li>
+              <li><a href="#">B2 Upper Intermediate</a></li>
+              <li><a href="#">C1 Advanced</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p>Links</p>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" id="very-bottom">
+          <div class="col-5">
+            &copy; 2020
+          </div>
+          <div class="col-7 mx-auto">
+            <a href="#"><img src="img/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="img/twitter.png" alt="twitter" /></a>
+            <a href="#"><img src="img/instagram.png" alt="instagram" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

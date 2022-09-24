@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f7fa;
+  font-family: Montserrat;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #84a1bb;
+}
+.wrapper {
+  background-color: #fff;
+  line-height: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+.sidebar {
+  background-color: #1e2939;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #fff;
+}
+.myPhoto {
+  width: 100%;
+}
+.contacts {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+.contacts-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.contacts-link {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #b6bbc2;
+}
+.contacts-type {
+  font-size: 1em;
+  font-weight: 600;
+  margin-right: 3%;
+}
+.techSkills,
+.softSkills {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+.skills-item {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #ff6b08;
+  margin-left: 10%;
+}
+.skills-text {
+  color: #dbdddf;
+}
+.main-container {
+  padding: 8% 5%;
+}
+.profession {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+.name {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 89px;
+}
+.description {
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+  color: #595959;
+  width: 70%;
+}
+.info-container {
+  margin-bottom: 10%;
+}
+.about-me-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.projects-link {
+  text-decoration: none;
+  color: #81aed5;
+}
+.projects-link a {
+}
+.projects-link,
+.tech-name {
+  /* color: #595959; */
+  font-weight: 400;
+}
+.dots {
+  color: #cecece;
+  font-weight: 100;
+}
+.projects-item {
+  font-weight: 700;
+  margin-left: 3%;
+}
+.projects-container {
+  margin-bottom: 55px;
+}
+.profession-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.profession-company {
+  color: #ff6b08;
+}
+.time {
+  color: #a8a8a8;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.divider {
+  color: #000000;
+}
+.profession-duties {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+.profession-duties-item {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 3%;
+}
+.university {
+  color: #ff6b08;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.speciality {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+@media screen (max-width: 1205px) { 
+  .name {
+      font-size: 2.5em;
+    }
+}
+
+@media screen (max-width: 994px) {
+  .contacts-link {
+      font-size: 0.7em;
+    }
+  .name {
+      line-height: 48px;
+    }
+}

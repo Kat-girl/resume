@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A-Quiet_Guy</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/globe.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="header">
+        <div class="logo">
+          <a class="navbar-brand" href="#"
+            ><img src="img/globe.png" alt="globe"
+          /></a>
+        </div>
+        <div class="brand">
+          <a href="index.html">English Practice</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+          <form class="form-inline ml-auto">
+            <input
+              type="text"
+              placeholder="Search what you need"
+              class="form-control mr-sm-2 my-1"
+            />
+            <button type="submit" class="btn btn-success my-1 my-sm-0">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <h1>I’m Not Angry, I’m Quiet</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="embed-responsive embed-responsive-16by9 video">
+              <iframe
+                class="embed-responsive-item"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/sGlTeRWTsGU"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="vocab col-lg-6 col-md-12">
+            <h4>Vocabulary</h4>
+            <table>
+              <tr class="odd">
+                <td>geesh</td>
+                <td>выражение раздражения</td>
+                <td class="empty"></td>
+                <td>upset</td>
+                <td>расстроенный</td>
+              </tr>
+              <tr class="even">
+                <td>who cares</td>
+                <td>какая разница</td>
+                <td class="empty"></td>
+                <td>make it up</td>
+                <td>мириться</td>
+              </tr>
+              <tr class="odd">
+                <td>apologize</td>
+                <td>извиняться</td>
+                <td class="empty"></td>
+                <td>wanna</td>
+                <td>= want to</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <form>
+        <div class="transcript">
+          <h4>Transcript</h4>
+          <p>- Hey, Nick, how's it going?</p>
+          <p>- Hey you...</p>
+          <p>- Geesh, what's his deal?</p>
+          <p>- Who cares?</p>
+          <p>(horn music)</p>
+          <p>
+            - Hey.
+            <input
+              type="text"
+              name="someone"
+              placeholder="type what you hear"
+              class="type"
+              id="someone"
+            />
+            needs their coffee today.
+          </p>
+
+          <p>
+            - And smile. Okay, let's try that again, Nick didn't
+            <input
+              type="text"
+              name="nick"
+              placeholder="type what you hear"
+              class="type"
+              id="nick"
+            />.
+          </p>
+          <p>
+            - Hey, I wanted to apologize to you about earlier. I know how upset
+            you've been. Woo, good, I'm so glad we made this up.
+          </p>
+          <p>- I have no idea what that was about.</p>
+          <p>
+            - And smile. Okay, Nick, come on, just a smile
+            <input
+              type="text"
+              name="time"
+              placeholder="type what you hear"
+              class="type"
+              id="time"
+            />.
+          </p>
+          <p>- Hey, Nick, are you okay?</p>
+          <p>- Yeah.</p>
+          <p>
+            - Really, are you sure? Okay. But if you wanna talk, I'm here for
+            you.
+            <input
+              type="text"
+              name="sure"
+              placeholder="type what you hear"
+              class="type"
+              id="sure"
+            />, okay? So brave.
+          </p>
+          <p>
+            - I'm actually quite
+            <input
+              type="text"
+              name="quite"
+              placeholder="type what you hear"
+              class="type"
+              id="quite"
+            />.
+          </p>
+          <p>
+            - And smile. Okay,
+            <input
+              type="text"
+              name="enough"
+              placeholder="type what you hear"
+              class="type"
+              id="enough"
+            />, that's good enough.
+          </p>
+          <p class="lastPar">(horn music)</p>
+        </div>
+        <div class="buttons">
+          <button type="submit" class="button">I give up</button>
+          <button type="reset" class="button reset">Try again</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <p>Menu</p>
+            <ul>
+              <li><a href="#">Grammar</a></li>
+              <li><a href="#">Listening</a></li>
+              <li><a href="#">Reading</a></li>
+              <li><a href="#">Speaking</a></li>
+              <li><a href="#">Writing</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p>Levels</p>
+            <ul>
+              <li><a href="#">A1 Elementary</a></li>
+              <li><a href="#">A2 Pre-intermediate</a></li>
+              <li><a href="#">B1 Intermediate</a></li>
+              <li><a href="#">B2 Upper Intermediate</a></li>
+              <li><a href="#">C1 Advanced</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <p>Links</p>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" id="very-bottom">
+          <div class="col-5">
+            &copy; 2020
+          </div>
+          <div class="col-7 mx-auto">
+            <a href="#"><img src="img/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="img/twitter.png" alt="twitter" /></a>
+            <a href="#"><img src="img/instagram.png" alt="instagram" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#someone').blur(function () {
+          var someone1 = 'someone';
+          var someone2 = 'Someone';
+          var responseOne = $('#someone').val();
+          if (responseOne === someone1 || responseOne === someone2) {
+            $('#someone').removeClass('incorrect').addClass('correct');
+          } else {
+            $('#someone').removeClass('correct').addClass('incorrect');
+          }
+        });
+        $('#nick').blur(function () {
+          var nick1 = 'smile';
+          var nick2 = 'Smile';
+          var responseTwo = $('#nick').val();
+          if (responseTwo === nick1 || responseTwo === nick2) {
+            $('#nick').removeClass('incorrect').addClass('correct');
+          } else {
+            $('#nick').removeClass('correct').addClass('incorrect');
+          }
+        });
+        $('#time').blur(function () {
+          var time1 = 'this time';
+          var time2 = 'This time';
+          var responseThree = $('#time').val();
+          if (responseThree === time1 || responseThree === time2) {
+            $('#time').removeClass('incorrect').addClass('correct');
+          } else {
+            $('#time').removeClass('correct').addClass('incorrect');
+          }
+        });
+        $('#sure').blur(function () {
+          var sure1 = 'anytime';
+          var sure2 = 'any time';
+          var sure3 = 'Anytime';
+          var sure4 = 'Any time';
+          var responseFour = $('#sure').val();
+          if (
+            responseFour === sure1 ||
+            responseFour === sure2 ||
+            responseFour === sure3 ||
+            responseFour === sure4
+          ) {
+            $('#sure').removeClass('incorrect').addClass('correct');
+          } else {
+            $('#sure').removeClass('correct').addClass('incorrect');
+          }
+        });
+        $('#quite').blur(function () {
+          var quite1 = 'happy';
+          var quite2 = 'Happy';
+          var responseFive = $('#quite').val();
+          if (responseFive === quite1 || responseFive === quite2) {
+            $('#quite').removeClass('incorrect').addClass('correct');
+          } else {
+            $('#quite').removeClass('correct').addClass('incorrect');
+          }
+        });
+        $('#enough').blur(function () {
+          var enough1 = 'forget it';
+          var enough2 = 'Forget it';
+          var responseSix = $('#enough').val();
+          if (responseSix === enough1 || responseSix === enough2) {
+            $('#enough').removeClass('incorrect').addClass('correct');
+          } else {
+            $('#enough').removeClass('correct').addClass('incorrect');
+          }
+        });
+        $('form').submit(function () {
+          $('#someone').val('Someone');
+          $('#nick').val('smile');
+          $('#time').val('this time');
+          $('#sure').val('Anytime');
+          $('#quite').val('happy');
+          $('#enough').val('forget it');
+          return false;
+        });
+
+        $('.reset').click(function () {
+          if ($('#someone').hasClass('correct')) {
+            $('#someone').removeClass('correct');
+          } else if ($('#someone').hasClass('incorrect')) {
+            $('#someone').removeClass('incorrect');
+          }
+          if ($('#nick').hasClass('correct')) {
+            $('#nick').removeClass('correct');
+          } else if ($('#nick').hasClass('incorrect')) {
+            $('#nick').removeClass('incorrect');
+          }
+          if ($('#time').hasClass('correct')) {
+            $('#time').removeClass('correct');
+          } else if ($('#time').hasClass('incorrect')) {
+            $('#time').removeClass('incorrect');
+          }
+          if ($('#sure').hasClass('correct')) {
+            $('#sure').removeClass('correct');
+          } else if ($('#sure').hasClass('incorrect')) {
+            $('#sure').removeClass('incorrect');
+          }
+          if ($('#quite').hasClass('correct')) {
+            $('#quite').removeClass('correct');
+          } else if ($('#quite').hasClass('incorrect')) {
+            $('#quite').removeClass('incorrect');
+          }
+          if ($('#enough').hasClass('correct')) {
+            $('#enough').removeClass('correct');
+          } else if ($('#enough').hasClass('incorrect')) {
+            $('#enough').removeClass('incorrect');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
