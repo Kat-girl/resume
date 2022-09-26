@@ -203,6 +203,9 @@ a:hover {
   font-weight: 400;
   margin-left: 3%;
 }
+.education__item {
+  margin-bottom: 25px;
+}
 .university {
   color: #ff6b08;
   font-size: 1.2em;
@@ -213,17 +216,24 @@ a:hover {
   font-weight: 700;
 }
 
-@media screen (max-width: 1205px) { 
+@media screen and (max-width: 1205px) { 
   .name {
       font-size: 2.5em;
     }
 }
 
-@media screen (max-width: 994px) {
+@media screen and (max-width: 994px) {
   .contacts-link {
       font-size: 0.7em;
     }
   .name {
       line-height: 48px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .name {
+      font-size: 2em;
+      line-height: 40px;
     }
 }

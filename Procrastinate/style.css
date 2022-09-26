@@ -76,3 +76,15 @@ body {
     position: absolute;
     bottom: 36px;
 }
+
+@media screen and (max-width: 426px) {
+    .logo {
+        font-size: 15px;
+    }
+    .advice {
+        font-size: 36px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
