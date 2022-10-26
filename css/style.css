@@ -43,6 +43,7 @@ a:hover {
   font-size: 0.9em;
   font-weight: 400;
   color: #b6bbc2;
+  transition: color 0.5s linear;
 }
 .contacts-type {
   font-size: 1em;
@@ -118,9 +119,10 @@ a:hover {
   padding: 20px;
   opacity: 0;
   z-index: 1;
+  transition: opacity 0.5s linear;
 }
 .project__overlay:hover {
-  opacity: 1;
+  opacity: 1;  
 }
 .table__cell_bootstrap {
   background-image: url(../img/project-1.jpg);
@@ -184,6 +186,7 @@ a:hover {
 }
 .profession-company {
   color: #ff6b08;
+  transition: color 0.5s linear;
 }
 .time {
   color: #a8a8a8;
