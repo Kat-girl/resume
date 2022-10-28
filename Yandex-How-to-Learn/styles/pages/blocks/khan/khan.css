@@ -1,0 +1,16 @@
+.khan {
+    padding-top: 100px;
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 870px) {
+    .khan {
+        padding-top: 65px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .khan {
+        padding-top: 45px;
+    }
+}

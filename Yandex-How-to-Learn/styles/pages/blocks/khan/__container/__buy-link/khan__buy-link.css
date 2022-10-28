@@ -1,0 +1,31 @@
+.khan__buy-link {
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #2f80ed;
+    text-decoration: none;
+    transition: opacity 1s linear;
+}
+
+.khan__buy-link:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 870px) {
+    .khan__buy-link {        
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .khan__buy-link {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .khan__buy-link {        
+        font-size: 20px;
+    }
+}

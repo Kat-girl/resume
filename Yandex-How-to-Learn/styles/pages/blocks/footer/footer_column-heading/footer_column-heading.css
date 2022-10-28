@@ -1,0 +1,12 @@
+.footer_column-heading {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+@media screen and (max-width: 660px) {  
+    .footer_column-heading {
+        line-height: 28px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

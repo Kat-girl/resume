@@ -1,0 +1,11 @@
+.two-columns_main-text {
+    width: 80%;
+    min-width: 784px;
+}
+
+@media screen and (max-width: 1277px) {
+    .two-columns_main-text {
+        min-width: 95%;
+        margin: auto;
+    }
+}

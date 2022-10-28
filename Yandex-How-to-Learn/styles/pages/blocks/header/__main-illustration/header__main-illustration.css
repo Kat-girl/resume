@@ -1,0 +1,22 @@
+.header__main-illustration {
+    background-image: url(../../../../../images/two_again.png);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 765px;
+    height: 608px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 1277px) {
+    .header__main-illustration {
+        width: 641px;
+        bottom: -64px;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .header__main-illustration {
+        display: none;
+    }
+}

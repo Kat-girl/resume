@@ -1,0 +1,54 @@
+.feynman__link {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    color: #2f80ed;
+    text-decoration: none;
+    transition: opacity 1s linear;
+}
+
+.feynman__link:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 1277px) {
+    .feynman__link {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .feynman__link {
+        color: #000;
+        right: 281px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .feynman__link {
+        right: 281px;
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .feynman__link {
+        right: 236px;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .feynman__link {
+        right: 120px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .feynman__link {
+        right: 30px;
+        font-size: 20px;
+    }
+}

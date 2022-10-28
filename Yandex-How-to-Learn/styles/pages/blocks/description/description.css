@@ -1,0 +1,15 @@
+.description {
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 870px) {
+    .description {
+        padding-top: 65px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .description {
+        padding-top: 45px;
+    }
+}

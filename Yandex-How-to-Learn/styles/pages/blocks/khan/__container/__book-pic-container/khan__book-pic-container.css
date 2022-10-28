@@ -1,0 +1,18 @@
+.khan__book-pic-container {
+    height: 608px;
+    overflow: hidden;
+    margin-right: 48px;
+}
+
+@media screen and (max-width: 660px) {
+    .khan__book-pic-container {
+        margin-bottom: 20px;
+        height: 333px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .khan__book-pic-container {
+        height: 200px;
+    }
+}

@@ -1,0 +1,28 @@
+.two-columns_brief {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #2f80ed;
+    width: 175px;
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 1277px) {
+    .two-columns_brief {
+        margin-right: 20px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .two-columns_brief {
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .two-columns_brief {
+        padding-left: 14px;
+    }
+}

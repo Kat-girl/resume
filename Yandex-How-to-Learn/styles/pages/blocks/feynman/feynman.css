@@ -1,0 +1,36 @@
+.feynman {
+    height: 890px;
+    background-color: #f2f2f2;
+    background-image: url(../../../../images/feynman.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 867px 637px;
+    position: relative;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 1277px) {
+    .feynman {
+        background-size: 70%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .feynman {
+        padding-top: 65px;
+        height: 765px
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .feynman {
+        height: 660px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .feynman {
+        height: 520px;
+        padding-top: 45px;
+    }
+}

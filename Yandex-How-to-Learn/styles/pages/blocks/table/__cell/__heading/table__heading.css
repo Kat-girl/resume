@@ -1,0 +1,18 @@
+.table__heading {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 870px) {
+    .table__heading {
+        line-height: 0.15;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .table__heading {
+        font-size: 16px;
+    }
+}

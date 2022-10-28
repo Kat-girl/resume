@@ -1,0 +1,38 @@
+.header__title {
+    width: 730px;
+    margin-left: 64px;
+    align-self: center;
+    font-size: 102px;
+    font-weight: 600;
+    line-height: 96px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1277px) {
+    .header__title {
+        font-size: 5em;
+        width: 595px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .header__title {
+        font-size: 4em;
+        line-height: 90px;
+        width: 345px;
+        margin-left: 54px;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .header__title {
+        font-size: 3em;
+        line-height: 54px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header__title {
+        margin-left: 34px;
+    }
+}

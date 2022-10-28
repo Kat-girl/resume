@@ -1,0 +1,42 @@
+.feynman__title {
+    width: 648px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1277px) {
+    .feynman__title {
+        line-height: 1.1;
+        font-size: 106px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .feynman__title {
+        line-height: 1.1;
+        font-size: 78px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .feynman__title {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .feynman__title {
+        line-height: 1;
+        font-size: 51px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .feynman__title {
+        line-height: 0.9;
+        font-size: 38px;
+    }
+}

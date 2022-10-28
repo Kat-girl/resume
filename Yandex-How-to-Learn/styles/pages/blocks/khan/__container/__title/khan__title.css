@@ -1,0 +1,31 @@
+.khan__title {
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 870px) {
+    .khan__title {
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .khan__title {
+        font-size: 48px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .khan__title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .khan__title {
+        font-size: 26px;
+    }
+}

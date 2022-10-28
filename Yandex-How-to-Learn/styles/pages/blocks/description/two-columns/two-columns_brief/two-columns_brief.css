@@ -1,0 +1,14 @@
+.two-columns_brief {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #2f80ed;
+    width: 175px;
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 420px) {
+    .two-columns_brief {
+        font-size: 16px;
+    }
+}

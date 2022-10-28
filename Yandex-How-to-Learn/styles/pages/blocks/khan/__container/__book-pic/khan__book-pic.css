@@ -1,0 +1,10 @@
+.khan__book-pic {
+    width: 620px;
+}
+
+@media screen and (max-width: 660px) {
+    .khan__book-pic {
+        width: 70%;
+        flex-basis: 80%;
+    }
+}
