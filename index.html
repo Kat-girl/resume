@@ -3,40 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
     <title>Resume_Podkopaieva</title>
   </head>
   <body>
     <!-- Main Container -->
     <div class="container">
-      <div class="row wrapper">
-        <div class="col-md-4 col-sm-12 sidebar">
-          <img class="myPhoto" src="./img/photo.jpg" alt="My photo" />
+      <div class="wrapper">
+        <div class="sidebar">
+          <img class="myPhoto" src="./img/photo.jpg" alt="My photo" width="300" height="300" />
 
           <!-- contacts -->
           <div class="contacts">
@@ -76,6 +55,9 @@
               </li>
               <li class="skills-item">
                 <span class="skills-text">Flexbox</span>
+              </li>
+              <li class="skills-item">
+                <span class="skills-text">Grid</span>
               </li>
               <li class="skills-item">
                 <span class="skills-text">Bootstrap 4</span>
@@ -127,7 +109,7 @@
         </div>
 
         <!-- About Me -->
-        <div class="col-md-8 col-sm-12 main-container">
+        <div class="main-container">
           <!-- About Me Main Info -->
           <div class="info-container">
             <h2 class="profession">Front-End Developer</h2>
@@ -146,14 +128,18 @@
           <div class="projects-container">
             <h3 class="about-me-title">Projects</h3>
             <div class="table">
-              <div class="table__cell table__cell_bootstrap">
+              <div class="table__cell table__cell_kekstagram">
                 <a
-                  href="Bootstrap4/bootstrap4.html"
+                  href="https://kekstagram-kat-girl.vercel.app/"
                   class="project__overlay"
                   target="_blank"
-                  >HTML5, CSS3, Bootstrap 4</a
+                  >Javascript</a
                 >
+                <p class="table__description">
+                  <a href="https://github.com/Kat-girl/kekstagram" class="table__github-link">Github repo link</a>
+                </p>
               </div>
+              
               <div class="table__cell table__cell_maths">
                 <a
                   href="Maths/index.html"
@@ -202,6 +188,27 @@
             <h3 class="about-me-title">Work Experience</h3>
 
             <!-- Company 1 -->
+            <div>
+              <h4 class="profession-title">
+                Online English Teacher
+              </h4>
+              <span class="time"
+                >November 2021 - until now <span class="divider">|</span> Russia
+              </span>
+              <ul class="profession-duties">
+                <li class="profession-duties-item">
+                  Teach relevant English lessons to children.
+                </li>
+                <li class="profession-duties-item">
+                  Develop reading, writing, speaking and listening skills in
+                  students.
+                </li>
+                <li class="profession-duties-item">
+                  Prepare students for exams and tests.
+                </li>
+              </ul>
+            </div>
+
             <div>
               <h4 class="profession-title">
                 HTML, CSS Coder (remote)
@@ -324,12 +331,12 @@
           <div>
             <h3 class="about-me-title">Education</h3>
             <div class="education__item">
-              <h4 class="university">International Academy of Business</h4>
+              <h4 class="university">HTML Academy</h4>
               <h5 class="speciality">
-                Сurrently taking the Programmer-Developer course
+                Сurrently taking the Frontend-Developer course
               </h5>
               <span class="time"
-                >September 2022 <span class="divider">|</span> Russia</span
+                >started in June 2023 <span class="divider">|</span> Russia</span
               >
             </div>
             <div class="education__item">

@@ -20,6 +20,10 @@ a:hover {
   max-width: 1200px;
   margin: 0 auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+
+  @media (min-width: 670px) {
+    display: flex;
+  }
 }
 .sidebar {
   background-color: #1e2939;
@@ -28,7 +32,8 @@ a:hover {
   color: #fff;
 }
 .myPhoto {
-  width: 100%;
+  display: block;
+  margin: auto;
 }
 .contacts {
   margin-top: 15%;
@@ -93,8 +98,12 @@ a:hover {
   margin-bottom: 10px;
 }
 .table {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .table__cell {
   flex: 1 1 230px;
@@ -124,8 +133,8 @@ a:hover {
 .project__overlay:hover {
   opacity: 1;  
 }
-.table__cell_bootstrap {
-  background-image: url(../img/project-1.jpg);
+.table__cell_kekstagram {
+  background-image: url(../img/kekstagram.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -144,6 +153,12 @@ a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+.table__github-link {
+  font-weight: 700;
+  color: #ff6b08;
+}
+
 .position_absolute {
   position: absolute;
   top: 0;
@@ -160,11 +175,8 @@ a:hover {
   text-decoration: none;
   color: #81aed5;
 }
-.projects-link a {
-}
 .projects-link,
 .tech-name {
-  /* color: #595959; */
   font-weight: 400;
 }
 .dots {
