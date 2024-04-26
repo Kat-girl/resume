@@ -153,6 +153,11 @@ a:hover {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+.table__cell_accordion {
+  background-image: url(../img/accordion.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
 .table__github-link {
   font-weight: 700;
