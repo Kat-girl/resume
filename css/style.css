@@ -133,6 +133,11 @@ a:hover {
 .project__overlay:hover {
   opacity: 1;  
 }
+.table__cell_keksobooking {
+  background-image: url(../img/keksobooking.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 .table__cell_kekstagram {
   background-image: url(../img/kekstagram.png);
   background-size: 100%;
