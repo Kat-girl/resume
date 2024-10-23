@@ -15,6 +15,7 @@ a:hover {
   color: #84a1bb;
 }
 .wrapper {
+  position: relative;
   background-color: #fff;
   line-height: 24px;
   max-width: 1200px;
@@ -24,6 +25,16 @@ a:hover {
   @media (min-width: 670px) {
     display: flex;
   }
+}
+.select-container {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.language-select {
+  padding: 5px;
+  border: 2px solid #1E2939;
+  border-radius: 5px;
 }
 .sidebar {
   background-color: #1e2939;
