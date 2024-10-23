@@ -54,6 +54,7 @@ a:hover {
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 20px;
+  text-transform: capitalize;
 }
 .contacts-link {
   font-size: 0.9em;
@@ -98,7 +99,6 @@ a:hover {
   font-weight: 400;
   letter-spacing: 0.42px;
   color: #595959;
-  width: 70%;
 }
 .info-container {
   margin-bottom: 10%;
@@ -215,11 +215,12 @@ a:hover {
   font-size: 1.2em;
   font-weight: 700;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .profession-company {
   color: #ff6b08;
   transition: color 0.5s linear;
+  font-weight: 700;
 }
 .time {
   color: #a8a8a8;
